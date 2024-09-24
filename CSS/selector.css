@@ -1,0 +1,29 @@
+  *{
+    color: crimson;
+    border: 3px  black;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    /*element selctor */
+    p{
+        color: midnightblue;
+    }
+    h1{
+        text-align: center;
+    }
+    span{
+        border: gold 3px solid;
+    }
+    /*ID selector*/
+    #border{
+        border: 2px solid red;
+        border-radius: 12px;
+        width: 200px;
+        text-align: center;
+    }
+
+    /*Class Selector */
+    .design{
+        font-size: xx-large;
+        background-color: aqua;
+        color: chocolate;
+    }

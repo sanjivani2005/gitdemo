@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--CSS Postioning-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position demo</title>
+</head>
+<body>
+    <STYLE>
+        #main{ 
+            width: 100%;
+            height: auto;
+            background-color: rgba(230, 166, 46, 0.516);
+            padding: 20px;
+            text-align: center;
+        }
+        /*COMBINE SELECTOR*/
+        #BOX1,#BOX2,#BOX3,#BOX4,#BOX5{
+            height: 200px;
+            width: 200px;
+            margin: 20px ;
+            border: 3px solid black;
+            border-radius: 20px;
+        }
+        /*SEPERATE SELECTOR*/
+        #BOX1{
+            background-color: blueviolet;
+            position: static;
+            /*No moment for static*/
+        }
+        #BOX2{
+            background-color: rgb(232, 12, 89);
+            position: relative;/*relative is depend upon perticular block*/
+            left: 100px;
+            top: 100px;
+            bottom: 100px;
+        }
+        #BOX3{
+            background-color: rgb(212, 178, 7);
+            position: absolute;/*relative to body tag*/
+            top: 10px;
+            left: 400px;
+        }
+        #BOX4{
+            background-color: chartreuse;
+            position: fixed;
+            top: 20px;
+            left: 250px;
+        }
+        #BOX5{
+            background-color: rgb(38, 228, 249);
+            position: sticky;
+            top: 20px;
+            left: 530px;
+        }
+    </STYLE>
+    <div id="main" >
+        
+        <div id="BOX1">BOX 1(STATIC)</div>
+        <div id="BOX1">BOX 1(STATIC)</div>
+        <div id="BOX5">BOX 5 (Sticky)</div>
+        <div id="BOX1">BOX 1(STATIC)</div>
+        <div id="BOX2">BOX 2 (relative)</div>
+        <div id="BOX2">BOX 2 (relative)</div>
+        <div id="BOX3">BOX 3 (absolute)</div>
+        <div id="BOX4">BOX 4 (Fixed)</div>
+        
+    </div>
+</body>
+</html>
